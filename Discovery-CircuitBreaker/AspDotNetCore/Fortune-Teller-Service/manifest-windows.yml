@@ -1,0 +1,9 @@
+---
+applications:
+- name: fortuneService
+  stack: windows2012R2
+  command: .\Fortune-Teller-Service
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+  services:
+   - myDiscoveryService
